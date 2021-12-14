@@ -17,6 +17,7 @@
 		20DB93E627682A3300D42683 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93BC27682A3200D42683 /* ContentView.swift */; };
 		20DB93E727682A3300D42683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DB93BD27682A3200D42683 /* Assets.xcassets */; };
 		20DB93E827682A3300D42683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DB93BD27682A3200D42683 /* Assets.xcassets */; };
+		20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93F927682B0D00D42683 /* Sample1View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		20DB93DB27682A3200D42683 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DB93DF27682A3200D42683 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		20DB93E127682A3200D42683 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		20DB93F927682B0D00D42683 /* Sample1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				20DB93BB27682A3200D42683 /* SampleSwiftUI2App.swift */,
 				20DB93BC27682A3200D42683 /* ContentView.swift */,
+				20DB93F727682AED00D42683 /* Views */,
 				20DB93BD27682A3200D42683 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +142,22 @@
 				20DB93E127682A3200D42683 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		20DB93F727682AED00D42683 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				20DB93F827682B0600D42683 /* Sample1 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		20DB93F827682B0600D42683 /* Sample1 */ = {
+			isa = PBXGroup;
+			children = (
+				20DB93F927682B0D00D42683 /* Sample1View.swift */,
+			);
+			path = Sample1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */,
 				20DB93E527682A3300D42683 /* ContentView.swift in Sources */,
 				20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */,
 			);
