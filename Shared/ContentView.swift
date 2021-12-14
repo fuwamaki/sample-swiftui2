@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var isShowContentView: Bool = false
+
     var body: some View {
         NavigationView {
             List {
@@ -17,7 +20,13 @@ struct ContentView: View {
                     Text("Sample1")
                 }
             }
-            .navigationTitle("Home")
+            .navigationTitle(isShowContentView ? "Home" : "")
+            .onAppear {
+                isShowContentView = true
+            }
+            .onDisappear {
+                isShowContentView = false
+            }
         }
     }
 }
