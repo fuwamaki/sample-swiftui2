@@ -18,6 +18,7 @@
 		20DB93E727682A3300D42683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DB93BD27682A3200D42683 /* Assets.xcassets */; };
 		20DB93E827682A3300D42683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DB93BD27682A3200D42683 /* Assets.xcassets */; };
 		20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93F927682B0D00D42683 /* Sample1View.swift */; };
+		20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93FC2768894A00D42683 /* BadgeCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		20DB93DF27682A3200D42683 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		20DB93E127682A3200D42683 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		20DB93F927682B0D00D42683 /* Sample1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample1View.swift; sourceTree = "<group>"; };
+		20DB93FC2768894A00D42683 /* BadgeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		20DB93F727682AED00D42683 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20DB93FB2768893A00D42683 /* Common */,
 				20DB93F827682B0600D42683 /* Sample1 */,
 			);
 			path = Views;
@@ -158,6 +161,14 @@
 				20DB93F927682B0D00D42683 /* Sample1View.swift */,
 			);
 			path = Sample1;
+			sourceTree = "<group>";
+		};
+		20DB93FB2768893A00D42683 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				20DB93FC2768894A00D42683 /* BadgeCardView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +331,7 @@
 			files = (
 				20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */,
 				20DB93E527682A3300D42683 /* ContentView.swift in Sources */,
+				20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */,
 				20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,13 @@ import SwiftUI
 struct Sample1View: View {
     var body: some View {
         VStack {
-            Text("Hello, World!")
+            BadgeCardView(title: "test", value: "value", valueColor: .blue)
+            Circle()
+                .fill(Color.blue)
+                .frame(width:250, height: 100)
+            Ellipse()
+                .fill(Color.blue)
+                .frame(width:250, height: 200)
         }
         .navigationTitle("Sample1")
     }
