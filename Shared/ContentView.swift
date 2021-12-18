@@ -19,6 +19,16 @@ struct ContentView: View {
                 } label: {
                     Text("Sample1")
                 }
+                NavigationLink {
+                    Sample2View()
+                } label: {
+                    Text("Sample2")
+                }
+                NavigationLink {
+                    Sample3View()
+                } label: {
+                    Text("Sample3")
+                }
             }
             .navigationTitle(isShowContentView ? "Home" : "")
             .onAppear {
