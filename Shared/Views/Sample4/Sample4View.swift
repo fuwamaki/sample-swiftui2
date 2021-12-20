@@ -17,6 +17,12 @@ struct Sample4View: View {
             }
         }
         .navigationTitle("List")
+        .alert(isPresented: $viewModel.isShowAlert) {
+            Alert(
+                title: Text("エラー"),
+                message: Text(viewModel.alertText),
+                dismissButton: .default(Text("OK")))
+        }
         .task {
             await viewModel.fetch()
         }
