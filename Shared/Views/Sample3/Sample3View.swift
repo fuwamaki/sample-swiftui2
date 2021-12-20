@@ -42,11 +42,6 @@ struct Sample3View: View {
     }
 }
 
-struct QiitaItem: Codable, Hashable {
-    var title: String
-    var url: String
-}
-
 struct Sample3View_Previews: PreviewProvider {
     static var previews: some View {
         Sample3View()
