@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct Sample2View: View {
+    @State var isRounded: Bool = false
+
     var body: some View {
         VStack {
-            Rectangle()
-                .frame(maxWidth: .infinity, maxHeight: 2)
-            Text("Hello, World!")
-                .frame(maxWidth: .infinity, alignment: .leading)
+            Text("テキスト")
+                .padding()
+                .background(.yellow)
+                .clipShape(Capsule())
+                .modifier(CustomShape(isRounded: isRounded))
+        }
+    }
+}
+
+struct CustomShape: ViewModifier {
+    var isRounded: Bool
+
+    func body(content: Content) -> some View {
+        if isRounded {
+            content
+                .clipShape(Capsule())
+        } else {
+            content
+                .clipShape(Rectangle())
         }
     }
 }
