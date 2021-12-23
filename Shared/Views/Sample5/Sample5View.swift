@@ -21,6 +21,13 @@ struct Sample5View: View {
             }
         }
         .navigationTitle("List")
+        .navigationBarItems(trailing: Button(
+            action: {
+                print("aa")
+            }, label: {
+                Text("post")
+            })
+        )
         .task {
             do {
                 let (data, _) = try await URLSession.shared.data(
