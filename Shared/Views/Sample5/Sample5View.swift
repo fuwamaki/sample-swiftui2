@@ -23,7 +23,19 @@ struct Sample5View: View {
         .navigationTitle("List")
         .navigationBarItems(trailing: Button(
             action: {
-                print("aa")
+                Task {
+                    do {
+                        var urlRequest = URLRequest(
+                            url: URL(string: "https://item-server.herokuapp.com/create")!
+                        )
+                        urlRequest.httpMethod = "POST"
+                        urlRequest.httpBody = try JSONEncoder().encode(sampleItemRequestEntity)
+                        print(String(data: urlRequest.httpBody!, encoding: .utf8) ?? "")
+                        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+                        print(response)
+                        print(String(data: data, encoding: .utf8) ?? "")
+                    }
+                }
             }, label: {
                 Text("post")
             })
@@ -42,6 +54,13 @@ struct Sample5View: View {
     }
 }
 
+struct Sample5View_Previews: PreviewProvider {
+    static var previews: some View {
+        Sample5View()
+    }
+}
+
+// MARK: Entity
 struct SampleItemResponse: Codable {
     let data: [SampleItem]
 }
@@ -53,8 +72,22 @@ struct SampleItem: Codable, Hashable {
     let price: Int
 }
 
-struct Sample5View_Previews: PreviewProvider {
-    static var previews: some View {
-        Sample5View()
-    }
+struct SampleItemRequestEntity: Codable {
+    let item: SamplePostItem
 }
+
+struct SamplePostItem: Codable {
+    let name: String
+    let category: String
+    let price: Int
+}
+
+let sampleItemRequestEntity = SampleItemRequestEntity(
+    item: samplePostItem
+)
+
+let samplePostItem = SamplePostItem(
+    name: "taro",
+    category: "human",
+    price: 1000
+)
