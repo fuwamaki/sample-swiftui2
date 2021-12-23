@@ -26,10 +26,17 @@ struct Sample5View: View {
                 Task {
                     do {
                         var urlRequest = URLRequest(
-                            url: URL(string: "https://item-server.herokuapp.com/create")!
+                            url: URL(string: "https://item-server.herokuapp.com/create2")!
                         )
                         urlRequest.httpMethod = "POST"
-                        urlRequest.httpBody = try JSONEncoder().encode(sampleItemRequestEntity)
+//                        let encoder = JSONEncoder()
+//                        encoder.dateEncodingStrategy = .secondsSince1970
+//                        encoder.outputFormatting = .prettyPrinted
+                        let aaa = """
+name=taro&category=human&price=1000
+"""
+                        urlRequest.httpBody = aaa.data(using: .utf8)
+//                        urlRequest.httpBody = try encoder.encode(sampleItemRequestEntity)
                         print(String(data: urlRequest.httpBody!, encoding: .utf8) ?? "")
                         let (data, response) = try await URLSession.shared.data(for: urlRequest)
                         print(response)
