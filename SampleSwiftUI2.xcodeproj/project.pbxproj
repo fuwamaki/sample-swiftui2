@@ -27,6 +27,8 @@
 		20DB943D27701D4B00D42683 /* Sample4APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943427700CFF00D42683 /* Sample4APIClient.swift */; };
 		20DB943E27701D5500D42683 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943727700F6E00D42683 /* QiitaItem.swift */; };
 		20DB943F27701DF200D42683 /* Sample4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943227700C5700D42683 /* Sample4ViewModel.swift */; };
+		DD27A45C27993D5D008FBD84 /* Sample6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27A45B27993D5D008FBD84 /* Sample6View.swift */; };
+		DD27A45E27993D65008FBD84 /* Sample6ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		20DB943727700F6E00D42683 /* QiitaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItem.swift; sourceTree = "<group>"; };
 		20DB94392770135E00D42683 /* Sample4ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample4ViewModelTest.swift; sourceTree = "<group>"; };
 		20DB943B2770141300D42683 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		DD27A45B27993D5D008FBD84 /* Sample6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample6View.swift; sourceTree = "<group>"; };
+		DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample6ViewModel.swift; sourceTree = "<group>"; };
+		DD27A45F27993E32008FBD84 /* SampleSwiftUI2 (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SampleSwiftUI2 (iOS).entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 		20DB93B527682A3200D42683 = {
 			isa = PBXGroup;
 			children = (
+				DD27A45F27993E32008FBD84 /* SampleSwiftUI2 (iOS).entitlements */,
 				20DB93BA27682A3200D42683 /* Shared */,
 				20DB93C927682A3200D42683 /* macOS */,
 				20DB93D227682A3200D42683 /* Tests iOS */,
@@ -179,6 +185,7 @@
 				20DB942C276E033E00D42683 /* Sample3 */,
 				20DB942F27700C2400D42683 /* Sample4 */,
 				2062328027747107009BCC99 /* Sample5 */,
+				DD27A45A27993D4E008FBD84 /* Sample6 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +238,15 @@
 				20DB943727700F6E00D42683 /* QiitaItem.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		DD27A45A27993D4E008FBD84 /* Sample6 */ = {
+			isa = PBXGroup;
+			children = (
+				DD27A45B27993D5D008FBD84 /* Sample6View.swift */,
+				DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */,
+			);
+			path = Sample6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,8 +416,10 @@
 				20DB943327700C5700D42683 /* Sample4ViewModel.swift in Sources */,
 				20DB93E527682A3300D42683 /* ContentView.swift in Sources */,
 				20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */,
+				DD27A45E27993D65008FBD84 /* Sample6ViewModel.swift in Sources */,
 				20DB942B276E00C200D42683 /* Sample2View.swift in Sources */,
 				20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */,
+				DD27A45C27993D5D008FBD84 /* Sample6View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SampleSwiftUI2 (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 98UFL8A7L4;
@@ -596,6 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SampleSwiftUI2 (iOS).entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 98UFL8A7L4;
