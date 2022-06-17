@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2028E53B2851DAD700DD5846 /* Sample7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53A2851DAD700DD5846 /* Sample7View.swift */; };
+		2028E53D2851DB2000DD5846 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53C2851DB2000DD5846 /* CalendarView.swift */; };
 		2062328227747119009BCC99 /* Sample5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062328127747119009BCC99 /* Sample5View.swift */; };
 		20DB93E027682A3200D42683 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93DF27682A3200D42683 /* Tests_macOS.swift */; };
 		20DB93E227682A3200D42683 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93E127682A3200D42683 /* Tests_macOSLaunchTests.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2028E53A2851DAD700DD5846 /* Sample7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample7View.swift; sourceTree = "<group>"; };
+		2028E53C2851DB2000DD5846 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2062328127747119009BCC99 /* Sample5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample5View.swift; sourceTree = "<group>"; };
 		20DB93BB27682A3200D42683 /* SampleSwiftUI2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSwiftUI2App.swift; sourceTree = "<group>"; };
 		20DB93BC27682A3200D42683 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2028E5392851DABD00DD5846 /* Sample7 */ = {
+			isa = PBXGroup;
+			children = (
+				2028E53A2851DAD700DD5846 /* Sample7View.swift */,
+				2028E53C2851DB2000DD5846 /* CalendarView.swift */,
+			);
+			path = Sample7;
+			sourceTree = "<group>";
+		};
 		2062328027747107009BCC99 /* Sample5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +199,7 @@
 				20DB942F27700C2400D42683 /* Sample4 */,
 				2062328027747107009BCC99 /* Sample5 */,
 				DD27A45A27993D4E008FBD84 /* Sample6 */,
+				2028E5392851DABD00DD5846 /* Sample7 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -411,6 +425,8 @@
 				20DB943827700F6E00D42683 /* QiitaItem.swift in Sources */,
 				2062328227747119009BCC99 /* Sample5View.swift in Sources */,
 				20DB942E276E034D00D42683 /* Sample3View.swift in Sources */,
+				2028E53B2851DAD700DD5846 /* Sample7View.swift in Sources */,
+				2028E53D2851DB2000DD5846 /* CalendarView.swift in Sources */,
 				20DB943527700CFF00D42683 /* Sample4APIClient.swift in Sources */,
 				20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */,
 				20DB943327700C5700D42683 /* Sample4ViewModel.swift in Sources */,
@@ -595,7 +611,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,7 +642,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -660,7 +676,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuwamaki.SampleSwiftUI2;
 				PRODUCT_NAME = SampleSwiftUI2;
@@ -688,7 +704,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fuwamaki.SampleSwiftUI2;
 				PRODUCT_NAME = SampleSwiftUI2;
