@@ -10,6 +10,7 @@
 		2028E53B2851DAD700DD5846 /* Sample7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53A2851DAD700DD5846 /* Sample7View.swift */; };
 		2028E53D2851DB2000DD5846 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53C2851DB2000DD5846 /* CalendarView.swift */; };
 		2062328227747119009BCC99 /* Sample5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062328127747119009BCC99 /* Sample5View.swift */; };
+		206A7B46285C112A00445BEA /* Sample8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A7B45285C112A00445BEA /* Sample8View.swift */; };
 		20DB93E027682A3200D42683 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93DF27682A3200D42683 /* Tests_macOS.swift */; };
 		20DB93E227682A3200D42683 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93E127682A3200D42683 /* Tests_macOSLaunchTests.swift */; };
 		20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93BB27682A3200D42683 /* SampleSwiftUI2App.swift */; };
@@ -54,6 +55,7 @@
 		2028E53A2851DAD700DD5846 /* Sample7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample7View.swift; sourceTree = "<group>"; };
 		2028E53C2851DB2000DD5846 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2062328127747119009BCC99 /* Sample5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample5View.swift; sourceTree = "<group>"; };
+		206A7B45285C112A00445BEA /* Sample8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample8View.swift; sourceTree = "<group>"; };
 		20DB93BB27682A3200D42683 /* SampleSwiftUI2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSwiftUI2App.swift; sourceTree = "<group>"; };
 		20DB93BC27682A3200D42683 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20DB93BD27682A3200D42683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,14 @@
 			path = Sample5;
 			sourceTree = "<group>";
 		};
+		206A7B44285C111A00445BEA /* Sample8 */ = {
+			isa = PBXGroup;
+			children = (
+				206A7B45285C112A00445BEA /* Sample8View.swift */,
+			);
+			path = Sample8;
+			sourceTree = "<group>";
+		};
 		20DB93B527682A3200D42683 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 				2062328027747107009BCC99 /* Sample5 */,
 				DD27A45A27993D4E008FBD84 /* Sample6 */,
 				2028E5392851DABD00DD5846 /* Sample7 */,
+				206A7B44285C111A00445BEA /* Sample8 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -422,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20DB943127700C2F00D42683 /* Sample4View.swift in Sources */,
+				206A7B46285C112A00445BEA /* Sample8View.swift in Sources */,
 				20DB943827700F6E00D42683 /* QiitaItem.swift in Sources */,
 				2062328227747119009BCC99 /* Sample5View.swift in Sources */,
 				20DB942E276E034D00D42683 /* Sample3View.swift in Sources */,
