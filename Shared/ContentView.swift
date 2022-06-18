@@ -52,7 +52,12 @@ struct ContentView: View {
                 NavigationLink {
                     Sample8View()
                 } label: {
-                    Text("Sample8")
+                    Text("CurrentWeather")
+                }
+                NavigationLink {
+                    Sample9View()
+                } label: {
+                    Text("MinuteWeather")
                 }
             }
             .navigationTitle(isShowContentView ? "Home" : "")
