@@ -1,5 +1,5 @@
 //
-//  Sample9View.swift
+//  Sample10View.swift
 //  SampleSwiftUI2 (iOS)
 //
 //  Created by fuwamaki on 2022/06/18.
@@ -9,16 +9,16 @@ import SwiftUI
 import WeatherKit
 import CoreLocation
 
-struct Sample9View: View {
-    @State var minuteWeathers: [MinuteWeather] = []
+struct Sample10View: View {
+    @State var hourWeathers: [HourWeather] = []
 
     var body: some View {
         List {
-            ForEach(minuteWeathers, id: \.self.date) { weather in
+            ForEach(hourWeathers, id: \.self.date) { weather in
                 Sample8Cell(title: weather.date.description, value: weather.precipitation.description)
             }
         }
-        .navigationTitle(Text("MinuteWeather"))
+        .navigationTitle(Text("HourWeather"))
         .task {
             let service = WeatherService()
             let location = CLLocation(
@@ -26,8 +26,8 @@ struct Sample9View: View {
                 longitude: 139.620798
             )
             do {
-                let forecast = try await service.weather(for: location, including: .minute)
-                minuteWeathers = forecast?.forecast ?? []
+                let forecast = try await service.weather(for: location, including: .hourly)
+                hourWeathers = forecast.forecast
             } catch let error {
                 print(error.localizedDescription)
             }
@@ -35,8 +35,8 @@ struct Sample9View: View {
     }
 }
 
-struct Sample9View_Previews: PreviewProvider {
+struct Sample10View_Previews: PreviewProvider {
     static var previews: some View {
-        Sample9View()
+        Sample10View()
     }
 }

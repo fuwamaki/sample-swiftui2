@@ -14,50 +14,62 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink {
-                    Sample1View()
-                } label: {
-                    Text("Sample1")
+                Group {
+                    NavigationLink {
+                        Sample1View()
+                    } label: {
+                        Text("Sample1")
+                    }
+                    NavigationLink {
+                        Sample2View()
+                    } label: {
+                        Text("Sample2")
+                    }
+                    NavigationLink {
+                        Sample3View()
+                    } label: {
+                        Text("Sample3")
+                    }
+                    NavigationLink {
+                        Sample4View()
+                    } label: {
+                        Text("Sample4")
+                    }
+                    NavigationLink {
+                        Sample5View()
+                    } label: {
+                        Text("Sample5")
+                    }
+                    NavigationLink {
+                        Sample6View()
+                    } label: {
+                        Text("Sample6")
+                    }
+                    NavigationLink {
+                        Sample7View()
+                    } label: {
+                        Text("Sample7")
+                    }
+                    NavigationLink {
+                        Sample8View()
+                    } label: {
+                        Text("CurrentWeather")
+                    }
+                    NavigationLink {
+                        Sample9View()
+                    } label: {
+                        Text("MinuteWeather")
+                    }
+                    NavigationLink {
+                        Sample10View()
+                    } label: {
+                        Text("HourWeather")
+                    }
                 }
                 NavigationLink {
-                    Sample2View()
+                    Sample11View()
                 } label: {
-                    Text("Sample2")
-                }
-                NavigationLink {
-                    Sample3View()
-                } label: {
-                    Text("Sample3")
-                }
-                NavigationLink {
-                    Sample4View()
-                } label: {
-                    Text("Sample4")
-                }
-                NavigationLink {
-                    Sample5View()
-                } label: {
-                    Text("Sample5")
-                }
-                NavigationLink {
-                    Sample6View()
-                } label: {
-                    Text("Sample6")
-                }
-                NavigationLink {
-                    Sample7View()
-                } label: {
-                    Text("Sample7")
-                }
-                NavigationLink {
-                    Sample8View()
-                } label: {
-                    Text("CurrentWeather")
-                }
-                NavigationLink {
-                    Sample9View()
-                } label: {
-                    Text("MinuteWeather")
+                    Text("DayWeather")
                 }
             }
             .navigationTitle(isShowContentView ? "Home" : "")
