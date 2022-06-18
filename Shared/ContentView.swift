@@ -81,6 +81,11 @@ struct ContentView: View {
                 } label: {
                     Text("WeatherAvailability")
                 }
+                NavigationLink {
+                    Sample14View()
+                } label: {
+                    Text("WeatherAlert")
+                }
             }
             .navigationTitle(isShowContentView ? "Home" : "")
             .onAppear {
