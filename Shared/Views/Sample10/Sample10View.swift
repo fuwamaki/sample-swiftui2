@@ -15,7 +15,7 @@ struct Sample10View: View {
     var body: some View {
         List {
             ForEach(hourWeathers, id: \.self.date) { weather in
-                Sample8Cell(title: weather.date.description, value: weather.precipitation.description)
+                Sample8Cell(title: weather.date.description, value: String(weather.precipitationChance))
             }
         }
         .navigationTitle(Text("HourWeather"))

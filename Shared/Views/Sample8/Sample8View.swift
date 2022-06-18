@@ -23,8 +23,8 @@ struct Sample8View: View {
                 Sample8Cell(title: "気圧", value: String(currentWeather?.pressure.value ?? 0.0) + "mbar")
                 Sample8Cell(title: "気圧傾向", value: String(currentWeather?.pressureTrend.description ?? ""))
                 Sample8Cell(title: "温度", value: String(currentWeather?.temperature.value ?? 0.0) + "℃")
-                Sample8Cell(title: "紫外線強度", value: String(currentWeather?.uvIndex.value ?? 0))
-                Sample8Cell(title: "視認度", value: String(currentWeather?.visibility.value ?? 0.0) + "m")
+                Sample8Cell(title: "UV指数", value: String(currentWeather?.uvIndex.value ?? 0))
+                Sample8Cell(title: "視程", value: String(currentWeather?.visibility.value ?? 0.0) + "m")
             }
             Sample8Cell(title: "風向", value: String(currentWeather?.wind.direction.value ?? 0.0) + "°")
             Sample8Cell(title: "風速", value: String(currentWeather?.wind.speed.value ?? 0.0) + "km/h")
