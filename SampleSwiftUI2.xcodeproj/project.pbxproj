@@ -11,6 +11,9 @@
 		2002C9BA285E106200CAD188 /* Sample9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9B9285E106200CAD188 /* Sample9View.swift */; };
 		2002C9BE285E12E000CAD188 /* Sample10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9BD285E12E000CAD188 /* Sample10View.swift */; };
 		2002C9C0285E12E600CAD188 /* Sample11View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9BF285E12E600CAD188 /* Sample11View.swift */; };
+		2002C9C3285E14E400CAD188 /* Sample12View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9C2285E14E400CAD188 /* Sample12View.swift */; };
+		2002C9C5285E160E00CAD188 /* Sample12Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9C4285E160E00CAD188 /* Sample12Cell.swift */; };
+		2002C9C7285E16DB00CAD188 /* Sample12ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9C6285E16DB00CAD188 /* Sample12ImageCell.swift */; };
 		2028E53B2851DAD700DD5846 /* Sample7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53A2851DAD700DD5846 /* Sample7View.swift */; };
 		2028E53D2851DB2000DD5846 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53C2851DB2000DD5846 /* CalendarView.swift */; };
 		2062328227747119009BCC99 /* Sample5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062328127747119009BCC99 /* Sample5View.swift */; };
@@ -60,6 +63,9 @@
 		2002C9B9285E106200CAD188 /* Sample9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample9View.swift; sourceTree = "<group>"; };
 		2002C9BD285E12E000CAD188 /* Sample10View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample10View.swift; sourceTree = "<group>"; };
 		2002C9BF285E12E600CAD188 /* Sample11View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample11View.swift; sourceTree = "<group>"; };
+		2002C9C2285E14E400CAD188 /* Sample12View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample12View.swift; sourceTree = "<group>"; };
+		2002C9C4285E160E00CAD188 /* Sample12Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample12Cell.swift; sourceTree = "<group>"; };
+		2002C9C6285E16DB00CAD188 /* Sample12ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample12ImageCell.swift; sourceTree = "<group>"; };
 		2028E53A2851DAD700DD5846 /* Sample7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample7View.swift; sourceTree = "<group>"; };
 		2028E53C2851DB2000DD5846 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2062328127747119009BCC99 /* Sample5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample5View.swift; sourceTree = "<group>"; };
@@ -143,6 +149,16 @@
 				2002C9BF285E12E600CAD188 /* Sample11View.swift */,
 			);
 			path = Sample11;
+			sourceTree = "<group>";
+		};
+		2002C9C1285E14D700CAD188 /* Sample12 */ = {
+			isa = PBXGroup;
+			children = (
+				2002C9C2285E14E400CAD188 /* Sample12View.swift */,
+				2002C9C4285E160E00CAD188 /* Sample12Cell.swift */,
+				2002C9C6285E16DB00CAD188 /* Sample12ImageCell.swift */,
+			);
+			path = Sample12;
 			sourceTree = "<group>";
 		};
 		2028E5392851DABD00DD5846 /* Sample7 */ = {
@@ -247,6 +263,7 @@
 				2002C9B8285E104900CAD188 /* Sample9 */,
 				2002C9BB285E12C300CAD188 /* Sample10 */,
 				2002C9BC285E12D300CAD188 /* Sample11 */,
+				2002C9C1285E14D700CAD188 /* Sample12 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -468,11 +485,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2002C9C5285E160E00CAD188 /* Sample12Cell.swift in Sources */,
 				2002C9B7285E078A00CAD188 /* Sample8Cell.swift in Sources */,
 				2002C9BE285E12E000CAD188 /* Sample10View.swift in Sources */,
 				20DB943127700C2F00D42683 /* Sample4View.swift in Sources */,
 				206A7B46285C112A00445BEA /* Sample8View.swift in Sources */,
 				20DB943827700F6E00D42683 /* QiitaItem.swift in Sources */,
+				2002C9C7285E16DB00CAD188 /* Sample12ImageCell.swift in Sources */,
 				2062328227747119009BCC99 /* Sample5View.swift in Sources */,
 				20DB942E276E034D00D42683 /* Sample3View.swift in Sources */,
 				2028E53B2851DAD700DD5846 /* Sample7View.swift in Sources */,
@@ -485,6 +504,7 @@
 				20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */,
 				DD27A45E27993D65008FBD84 /* Sample6ViewModel.swift in Sources */,
 				2002C9BA285E106200CAD188 /* Sample9View.swift in Sources */,
+				2002C9C3285E14E400CAD188 /* Sample12View.swift in Sources */,
 				20DB942B276E00C200D42683 /* Sample2View.swift in Sources */,
 				20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */,
 				DD27A45C27993D5D008FBD84 /* Sample6View.swift in Sources */,
