@@ -17,7 +17,7 @@ struct Sample13View: View {
             Sample8Cell(title: "alertAvailability", value: availability?.alertAvailability.rawValue ?? "")
             Sample8Cell(title: "minuteAvailability", value: availability?.minuteAvailability.rawValue ?? "")
         }
-        .navigationTitle(Text("HourWeather"))
+        .navigationTitle(Text("WeatherAvailability"))
         .task {
             let service = WeatherService()
             let location = CLLocation(

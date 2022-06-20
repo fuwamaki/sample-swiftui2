@@ -15,7 +15,7 @@ struct Sample12View: View {
     var body: some View {
         List {
             Sample8Cell(title: "name", value: attribution?.serviceName ?? "")
-            Sample12Cell(title: "legalPageURL", value: attribution?.legalPageURL.description ?? "")
+            Sample8Cell(title: "legalPageURL", value: attribution?.legalPageURL.description ?? "")
             Sample12ImageCell(title: "squareMarkURL", value: attribution?.squareMarkURL)
             Sample12ImageCell(title: "combinedMarkDarkURL", value: attribution?.combinedMarkDarkURL)
             Sample12ImageCell(title: "combinedMarkLightURL", value: attribution?.combinedMarkLightURL)
