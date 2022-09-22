@@ -12,16 +12,24 @@ struct Sample17View: View {
 
     var body: some View {
         VStack {
-            Button("Show") {
-                alertObject.showSingle(
-                    title: "title",
-                    message: "message",
-                    choiceText: "choice"
-                )
+            Button("Show Error") {
+                alertObject.showError(message: "message")
+            }
+            Button("Show Single") {
+                alertObject.showSingle(title: "うおー", message: "おりゃ")
+            }
+            Button("Show Double") {
+                alertObject.showDouble(title: "ははは", message: "たたた")
             }
         }
-        .alert(isPresented: $alertObject.isShow) {
-            alertObject.alert
+        .alert(
+            alertObject.model?.title ?? "",
+            isPresented: $alertObject.isShow,
+            presenting: alertObject.model
+        ) { model in
+            model.actionView
+        } message: { model in
+            model.messageView
         }
     }
 }

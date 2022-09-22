@@ -9,77 +9,83 @@ import SwiftUI
 
 class AlertObject: ObservableObject {
     @Published var isShow: Bool = false
-    @Published var title: String = "エラー"
-    @Published var message: String? = "不具合が発生しました。お手数ですが時間をおいてもう一度お試しください。"
-    @Published var choiceText: String = "OK"
-    @Published var defaultAction: (() -> Void)?
-    @Published var cancelAction: (() -> Void)?
-    @Published var showAlertType: AlertType = .single
+    @Published var model: Model?
 
-    enum AlertType {
-        case single
-        case double
+    struct Model {
+        var title: String = "エラー"
+        var messageView: MessageView?
+        var actionView: ActionView
     }
 
-    var alert: Alert {
-        switch showAlertType {
-        case .single:
-            return Alert(
-                title: Text(title),
-                message: message == nil ? nil : Text(message!),
-                dismissButton: defaultAction == nil
-                ? .default(Text(choiceText))
-                : .default(Text(choiceText), action: defaultAction)
-            )
-        case .double:
-            return Alert(
-                title: Text(title),
-                message: message == nil ? nil : Text(message!),
-                primaryButton: defaultAction == nil
-                ? .default(Text(choiceText))
-                : .default(Text(choiceText), action: defaultAction),
-                secondaryButton: .cancel(cancelAction)
-            )
+    struct MessageView: View {
+        var message: String
+
+        var body: some View {
+            Text(message)
+        }
+    }
+
+    struct ActionView: View {
+        var kind: Kind
+
+        enum Kind {
+            case single(text: String, action: (() -> Void)? = nil)
+            case double(text: String, action: (() -> Void)? = nil, cancelAction: (() -> Void)? = nil)
+        }
+
+        var body: some View {
+            switch kind {
+            case .single(let text, let action):
+                Button(text, action: action ?? {})
+            case .double(let text, let action, let cancelAction):
+                Button("キャンセル", action: cancelAction ?? {})
+                Button(text, action: action ?? {})
+            }
         }
     }
 
     func showError(message: String) {
-        self.title = "エラー"
-        self.message = message
-        self.choiceText = "OK"
-        self.showAlertType = .single
-        self.defaultAction = nil
-        self.cancelAction = nil
+        self.model = Model(
+            title: "エラー",
+            messageView: MessageView(message: message),
+            actionView: ActionView(kind: .single(text: "OK"))
+        )
         self.isShow.toggle()
     }
 
     func showSingle(
         title: String,
         message: String?,
-        choiceText: String? = nil,
+        actionText: String? = nil,
         action: (() -> Void)? = nil
     ) {
-        self.title = title
-        self.message = message
-        self.choiceText = choiceText ?? "OK"
-        self.defaultAction = action
-        self.showAlertType = .single
+        self.model = Model(
+            title: title,
+            messageView: (message != nil) ? MessageView(message: message!) : nil,
+            actionView: ActionView(kind: .single(
+                text: actionText ?? "OK",
+                action: action
+            ))
+        )
         self.isShow.toggle()
     }
 
     func showDouble(
         title: String,
         message: String?,
-        choiceText: String? = nil,
+        actionText: String? = nil,
         action: (() -> Void)? = nil,
         cancelAction: (() -> Void)? = nil
     ) {
-        self.title = title
-        self.message = message
-        self.choiceText = choiceText ?? "OK"
-        self.defaultAction = action
-        self.cancelAction = cancelAction
-        self.showAlertType = .double
+        self.model = Model(
+            title: title,
+            messageView: (message != nil) ? MessageView(message: message!) : nil,
+            actionView: ActionView(kind: .double(
+                text: actionText ?? "OK",
+                action: action,
+                cancelAction: cancelAction
+            ))
+        )
         self.isShow.toggle()
     }
 }
