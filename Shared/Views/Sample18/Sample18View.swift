@@ -16,7 +16,6 @@ struct Sample18View: View {
         let message: String
     }
 
-    // deprecatedになるらしい
     var body: some View {
         VStack {
             Button("Show") {
@@ -33,10 +32,8 @@ struct Sample18View: View {
             isPresented: $isShowAlert,
             presenting: alertEntity
         ) { entity in
-            VStack {
-                Button("Cancel") { print("Cancel") }
-                Button("OK") { print("OK") }
-            }
+            Button("Cancel") { print("Cancel") }
+            Button("OK") { print("OK") }
         } message: { entity in
             Text(entity.message)
         }

@@ -26,11 +26,7 @@ struct Sample17View: View {
             alertObject.model?.title ?? "",
             isPresented: $alertObject.isShow,
             presenting: alertObject.model
-        ) { model in
-            model.actionView
-        } message: { model in
-            model.messageView
-        }
+        ) { $0.actionView } message: { $0.messageView }
     }
 }
 
