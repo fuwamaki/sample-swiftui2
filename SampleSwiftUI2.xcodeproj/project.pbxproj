@@ -20,6 +20,8 @@
 		2028E53D2851DB2000DD5846 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53C2851DB2000DD5846 /* CalendarView.swift */; };
 		2062328227747119009BCC99 /* Sample5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062328127747119009BCC99 /* Sample5View.swift */; };
 		206A7B46285C112A00445BEA /* Sample8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A7B45285C112A00445BEA /* Sample8View.swift */; };
+		20C0D80328DCE3A8004B9C1D /* Sample15View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0D80228DCE3A8004B9C1D /* Sample15View.swift */; };
+		20C0D80528DCE41A004B9C1D /* Sample15TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C0D80428DCE41A004B9C1D /* Sample15TestView.swift */; };
 		20DB93E027682A3200D42683 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93DF27682A3200D42683 /* Tests_macOS.swift */; };
 		20DB93E227682A3200D42683 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93E127682A3200D42683 /* Tests_macOSLaunchTests.swift */; };
 		20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB93BB27682A3200D42683 /* SampleSwiftUI2App.swift */; };
@@ -74,6 +76,8 @@
 		2028E53C2851DB2000DD5846 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2062328127747119009BCC99 /* Sample5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample5View.swift; sourceTree = "<group>"; };
 		206A7B45285C112A00445BEA /* Sample8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample8View.swift; sourceTree = "<group>"; };
+		20C0D80228DCE3A8004B9C1D /* Sample15View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample15View.swift; sourceTree = "<group>"; };
+		20C0D80428DCE41A004B9C1D /* Sample15TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample15TestView.swift; sourceTree = "<group>"; };
 		20DB93BB27682A3200D42683 /* SampleSwiftUI2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSwiftUI2App.swift; sourceTree = "<group>"; };
 		20DB93BC27682A3200D42683 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		20DB93BD27682A3200D42683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -207,6 +211,15 @@
 			path = Sample8;
 			sourceTree = "<group>";
 		};
+		20C0D80128DCE393004B9C1D /* Sample15 */ = {
+			isa = PBXGroup;
+			children = (
+				20C0D80228DCE3A8004B9C1D /* Sample15View.swift */,
+				20C0D80428DCE41A004B9C1D /* Sample15TestView.swift */,
+			);
+			path = Sample15;
+			sourceTree = "<group>";
+		};
 		20DB93B527682A3200D42683 = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +299,7 @@
 				2002C9C1285E14D700CAD188 /* Sample12 */,
 				2002C9C8285E876200CAD188 /* Sample13 */,
 				2002C9CB285E88FA00CAD188 /* Sample14 */,
+				20C0D80128DCE393004B9C1D /* Sample15 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -511,6 +525,7 @@
 				2002C9B7285E078A00CAD188 /* Sample8Cell.swift in Sources */,
 				2002C9BE285E12E000CAD188 /* Sample10View.swift in Sources */,
 				20DB943127700C2F00D42683 /* Sample4View.swift in Sources */,
+				20C0D80528DCE41A004B9C1D /* Sample15TestView.swift in Sources */,
 				206A7B46285C112A00445BEA /* Sample8View.swift in Sources */,
 				20DB943827700F6E00D42683 /* QiitaItem.swift in Sources */,
 				2002C9CA285E877200CAD188 /* Sample13View.swift in Sources */,
@@ -529,6 +544,7 @@
 				DD27A45E27993D65008FBD84 /* Sample6ViewModel.swift in Sources */,
 				2002C9BA285E106200CAD188 /* Sample9View.swift in Sources */,
 				2002C9C3285E14E400CAD188 /* Sample12View.swift in Sources */,
+				20C0D80328DCE3A8004B9C1D /* Sample15View.swift in Sources */,
 				20DB942B276E00C200D42683 /* Sample2View.swift in Sources */,
 				20DB93E327682A3300D42683 /* SampleSwiftUI2App.swift in Sources */,
 				DD27A45C27993D5D008FBD84 /* Sample6View.swift in Sources */,
