@@ -14,16 +14,17 @@ struct Sample18View: View {
     struct AlertEntity {
         let title: String
         let message: String
+        let actionText: String
     }
 
     var body: some View {
         VStack {
             Button("Show") {
-                alertEntity = AlertEntity(title: "タイトル", message: "メッセージ")
-                isShowAlert.toggle()
-            }
-            Button("Show") {
-                alertEntity = AlertEntity(title: "タイトル2", message: "メッセージ2")
+                alertEntity = AlertEntity(
+                    title: "タイトル",
+                    message: "メッセージ",
+                    actionText: "OK"
+                )
                 isShowAlert.toggle()
             }
         }
@@ -32,8 +33,11 @@ struct Sample18View: View {
             isPresented: $isShowAlert,
             presenting: alertEntity
         ) { entity in
-            Button("Cancel") { print("Cancel") }
-            Button("OK") { print("OK") }
+            Button(entity.actionText) {
+                print(entity.actionText)
+            }
+            .bold() // 無反応
+            .foregroundColor(.red) // 無反応
         } message: { entity in
             Text(entity.message)
         }

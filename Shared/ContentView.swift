@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var isShowContentView: Bool = false
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 Group {
                     NavigationLink {

@@ -16,18 +16,19 @@ struct Sample17View: View {
                 alertObject.showError(message: "message")
             }
             Button("Show Single") {
-                alertObject.showSingle(title: "うおー", message: "おりゃ")
+                alertObject.showSingle(
+                    title: "シングル",
+                    message: "メッセージ"
+                )
             }
             Button("Show Double") {
-                alertObject.showDouble(title: "ははは", message: "たたた")
+                alertObject.showDouble(
+                    title: "ダブル",
+                    message: "メッセージ"
+                )
             }
         }
         .customAlert(for: alertObject)
-//        .alert(
-//            alertObject.model?.title ?? "",
-//            isPresented: $alertObject.isShow,
-//            presenting: alertObject.model
-//        ) { $0.actionView } message: { $0.messageView }
     }
 }
 
