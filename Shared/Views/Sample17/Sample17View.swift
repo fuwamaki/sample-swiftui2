@@ -22,16 +22,40 @@ struct Sample17View: View {
                 alertObject.showDouble(title: "ははは", message: "たたた")
             }
         }
-        .alert(
-            alertObject.model?.title ?? "",
-            isPresented: $alertObject.isShow,
-            presenting: alertObject.model
-        ) { $0.actionView } message: { $0.messageView }
+        .customAlert(for: alertObject)
+//        .alert(
+//            alertObject.model?.title ?? "",
+//            isPresented: $alertObject.isShow,
+//            presenting: alertObject.model
+//        ) { $0.actionView } message: { $0.messageView }
     }
 }
 
 struct Sample17View_Previews: PreviewProvider {
     static var previews: some View {
         Sample17View()
+    }
+}
+
+extension View {
+    func customAlert(for alertObject: AlertObject) -> some View {
+        modifier(CustomAlertView(alertObject: alertObject))
+    }
+}
+
+struct CustomAlertView: ViewModifier {
+    @ObservedObject var alertObject: AlertObject
+
+    func body(content: Content) -> some View {
+        content
+            .alert(
+                alertObject.model?.title ?? "",
+                isPresented: $alertObject.isShow,
+                presenting: alertObject.model
+            ) {
+                $0.actionView
+            } message: {
+                $0.messageView
+            }
     }
 }
