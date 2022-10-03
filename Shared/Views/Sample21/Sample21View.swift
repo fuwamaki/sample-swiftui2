@@ -21,15 +21,13 @@ struct Sample21View: View {
                     content: {
                 Text("FirstView")
                     .tag(0)
-                    .gesture(canSwipe ? DragGesture() : nil)
                 Text("SecondView")
                     .tag(1)
-                    .gesture(canSwipe ? DragGesture() : nil)
                 Text("ThirdView")
                     .tag(2)
-                    .gesture(canSwipe ? DragGesture() : nil)
             })
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            .disabled(true)
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Test")
