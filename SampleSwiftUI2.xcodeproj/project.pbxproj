@@ -45,6 +45,8 @@
 		20DB943D27701D4B00D42683 /* Sample4APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943427700CFF00D42683 /* Sample4APIClient.swift */; };
 		20DB943E27701D5500D42683 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943727700F6E00D42683 /* QiitaItem.swift */; };
 		20DB943F27701DF200D42683 /* Sample4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943227700C5700D42683 /* Sample4ViewModel.swift */; };
+		20FA163628EAD2B90020F291 /* Sample19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163528EAD2B90020F291 /* Sample19View.swift */; };
+		20FA163928EAD3060020F291 /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 20FA163828EAD3060020F291 /* SlidingTabView */; };
 		DD27A45C27993D5D008FBD84 /* Sample6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27A45B27993D5D008FBD84 /* Sample6View.swift */; };
 		DD27A45E27993D65008FBD84 /* Sample6ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -106,6 +108,7 @@
 		20DB943727700F6E00D42683 /* QiitaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItem.swift; sourceTree = "<group>"; };
 		20DB94392770135E00D42683 /* Sample4ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample4ViewModelTest.swift; sourceTree = "<group>"; };
 		20DB943B2770141300D42683 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		20FA163528EAD2B90020F291 /* Sample19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample19View.swift; sourceTree = "<group>"; };
 		DD27A45B27993D5D008FBD84 /* Sample6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample6View.swift; sourceTree = "<group>"; };
 		DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample6ViewModel.swift; sourceTree = "<group>"; };
 		DD27A45F27993E32008FBD84 /* SampleSwiftUI2 (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SampleSwiftUI2 (iOS).entitlements"; sourceTree = "<group>"; };
@@ -116,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FA163928EAD3060020F291 /* SlidingTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +340,7 @@
 				20C0D80628DCEE9C004B9C1D /* Sample16 */,
 				20C0D80928DCF2E3004B9C1D /* Sample17 */,
 				20C0D80E28DCF7D7004B9C1D /* Sample18 */,
+				20FA163428EAD29B0020F291 /* Sample19 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +395,14 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		20FA163428EAD29B0020F291 /* Sample19 */ = {
+			isa = PBXGroup;
+			children = (
+				20FA163528EAD2B90020F291 /* Sample19View.swift */,
+			);
+			path = Sample19;
+			sourceTree = "<group>";
+		};
 		DD27A45A27993D4E008FBD84 /* Sample6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,6 +428,9 @@
 			dependencies = (
 			);
 			name = "SampleSwiftUI2 (iOS)";
+			packageProductDependencies = (
+				20FA163828EAD3060020F291 /* SlidingTabView */,
+			);
 			productName = "SampleSwiftUI2 (iOS)";
 			productReference = 20DB93C227682A3200D42683 /* SampleSwiftUI2.app */;
 			productType = "com.apple.product-type.application";
@@ -507,6 +523,9 @@
 				Base,
 			);
 			mainGroup = 20DB93B527682A3200D42683;
+			packageReferences = (
+				20FA163728EAD3060020F291 /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = 20DB93C327682A3200D42683 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,6 +596,7 @@
 				20DB943527700CFF00D42683 /* Sample4APIClient.swift in Sources */,
 				20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */,
 				20C0D81028DCF7E6004B9C1D /* Sample18View.swift in Sources */,
+				20FA163628EAD2B90020F291 /* Sample19View.swift in Sources */,
 				20DB943327700C5700D42683 /* Sample4ViewModel.swift in Sources */,
 				20DB93E527682A3300D42683 /* ContentView.swift in Sources */,
 				20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */,
@@ -1014,6 +1034,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20FA163728EAD3060020F291 /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20FA163828EAD3060020F291 /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20FA163728EAD3060020F291 /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20DB93B627682A3200D42683 /* Project object */;
 }

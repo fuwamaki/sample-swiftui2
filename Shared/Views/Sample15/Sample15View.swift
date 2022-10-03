@@ -23,7 +23,7 @@ struct Sample15View: View {
         NavigationLink("Hey", isActive: $isShow) {
             Sample15TestView(text: "HHH")
         }
-        // これだな
+        // これ
         Button("Next") {
             isShow.toggle()
         }
@@ -31,7 +31,6 @@ struct Sample15View: View {
             Sample15TestView(text: "HHH")
         }
 
-        // Navigation2重になるじゃん、クソすぎる
 //        NavigationStack(path: $path) {
 //            List {
 //                NavigationLink("Purple", value: "Purple")
@@ -43,7 +42,6 @@ struct Sample15View: View {
 //            }
 //        }
 
-        // Navigation2重になるじゃん、クソすぎる
 //        NavigationSplitView {
 //            List(textList, id: \.self, selection: $selection) { text in
 //                NavigationLink(text, value: text)
