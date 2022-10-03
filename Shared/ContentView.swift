@@ -66,50 +66,57 @@ struct ContentView: View {
                         Text("HourWeather")
                     }
                 }
-                NavigationLink {
-                    Sample11View()
-                } label: {
-                    Text("DayWeather")
-                }
-                NavigationLink {
-                    Sample12View()
-                } label: {
-                    Text("WeatherAttribution")
-                }
-                NavigationLink {
-                    Sample13View()
-                } label: {
-                    Text("WeatherAvailability")
-                }
-                NavigationLink {
-                    Sample14View()
-                } label: {
-                    Text("WeatherAlert")
-                }
-                NavigationLink {
-                    Sample15View()
-                } label: {
-                    Text("Sample15")
-                }
-                NavigationLink {
-                    Sample16View()
-                } label: {
-                    Text("Sample16")
-                }
-                NavigationLink {
-                    Sample17View()
-                } label: {
-                    Text("Sample17")
-                }
-                NavigationLink {
-                    Sample18View()
-                } label: {
-                    Text("Sample18")
-                }
-                NavigationLink {
-                    Sample19View()
-                } label: {
-                    Text("Sample19")
+                Group {
+                    NavigationLink {
+                        Sample11View()
+                    } label: {
+                        Text("DayWeather")
+                    }
+                    NavigationLink {
+                        Sample12View()
+                    } label: {
+                        Text("WeatherAttribution")
+                    }
+                    NavigationLink {
+                        Sample13View()
+                    } label: {
+                        Text("WeatherAvailability")
+                    }
+                    NavigationLink {
+                        Sample14View()
+                    } label: {
+                        Text("WeatherAlert")
+                    }
+                    NavigationLink {
+                        Sample15View()
+                    } label: {
+                        Text("Sample15")
+                    }
+                    NavigationLink {
+                        Sample16View()
+                    } label: {
+                        Text("Sample16")
+                    }
+                    NavigationLink {
+                        Sample17View()
+                    } label: {
+                        Text("Sample17")
+                    }
+                    NavigationLink {
+                        Sample18View()
+                    } label: {
+                        Text("Sample18")
+                    }
+                    NavigationLink {
+                        Sample19View()
+                    } label: {
+                        Text("Sample19")
+                    }
+                    NavigationLink {
+                        Sample20View()
+                    } label: {
+                        Text("Sample20")
+                    }
                 }
             }
             .navigationTitle(isShowContentView ? "Home" : "")
