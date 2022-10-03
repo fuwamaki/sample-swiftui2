@@ -16,7 +16,7 @@ struct Sample21View: View {
     var body: some View {
         VStack(spacing: 0) {
             Divider()
-            Tabs(list: list, selectedTab: $selectedTab)
+            TopTabView(list: list, selectedTab: $selectedTab)
             TabView(selection: $selectedTab,
                     content: {
                 Text("FirstView")
@@ -47,7 +47,7 @@ struct Tab {
     var title: String
 }
 
-struct Tabs: View {
+struct TopTabView: View {
     let list: [String]
     @Binding var selectedTab: Int
 
