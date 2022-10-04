@@ -9,22 +9,42 @@ import SwiftUI
 
 struct Sample22View: View {
     @State private var text: String = ""
+    @FocusState var isFocus: Bool
 
     var body: some View {
-        VStack {
-            TextField("TextField",text: self.$text, axis: .vertical)
-                .lineLimit(5...10)
-                .padding(8)
-                .background(Color.gray.opacity(0.3))
-                .cornerRadius(13.0)
-                .toolbar {
-                    ToolbarItem(placement: .keyboard) {
-                        Text("keyboard")
+        ZStack {
+            VStack {
+                Text("aaa")
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                isFocus = false
+            }
+            VStack(spacing: 0) {
+                Spacer()
+                Divider()
+                HStack(alignment: .bottom) {
+                    TextField("TextField",text: self.$text, axis: .vertical)
+                        .padding(8)
+                        .lineLimit(1...10)
+                        .frame(minHeight: 40)
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(8.0)
+                        .focused($isFocus)
+                    Button {
+                    } label: {
+                        Text("Send")
+                            .frame(width: 72, height: 40)
+                            .background(Color.cyan)
+                            .foregroundColor(.white)
+                            .cornerRadius(8.0)
                     }
                 }
-            Spacer()
+                .padding(8)
+                .background(Color.white)
+            }
         }
-        .padding(16.0)
         .navigationTitle("Test")
     }
 }
