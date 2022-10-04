@@ -50,7 +50,7 @@ struct HalfModalView<Sheet: View>: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
         UIViewController()
     }
-    
+
     func updateUIViewController(
         _ viewController: UIViewController,
         context: Context
@@ -75,7 +75,9 @@ struct HalfModalView<Sheet: View>: UIViewControllerRepresentable {
             self.parent = parent
         }
 
-        func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        func presentationControllerDidDismiss(
+            _ presentationController: UIPresentationController
+        ) {
             parent.isShow = false
         }
     }
