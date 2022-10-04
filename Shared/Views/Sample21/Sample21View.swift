@@ -40,11 +40,6 @@ struct Sample21View_Previews: PreviewProvider {
     }
 }
 
-struct Tab {
-    var icon: Image?
-    var title: String
-}
-
 struct TopTabView: View {
     let list: [String]
     @Binding var selectedTab: Int
