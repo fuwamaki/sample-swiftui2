@@ -49,6 +49,7 @@
 		20FA163928EAD3060020F291 /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 20FA163828EAD3060020F291 /* SlidingTabView */; };
 		20FA163C28EAD56B0020F291 /* Sample20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163B28EAD56B0020F291 /* Sample20View.swift */; };
 		20FA163F28EAF8F40020F291 /* Sample21View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163E28EAF8F40020F291 /* Sample21View.swift */; };
+		20FA165228EC15500020F291 /* Sample22View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA165128EC15500020F291 /* Sample22View.swift */; };
 		DD27A45C27993D5D008FBD84 /* Sample6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27A45B27993D5D008FBD84 /* Sample6View.swift */; };
 		DD27A45E27993D65008FBD84 /* Sample6ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,7 @@
 		20FA163528EAD2B90020F291 /* Sample19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample19View.swift; sourceTree = "<group>"; };
 		20FA163B28EAD56B0020F291 /* Sample20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample20View.swift; sourceTree = "<group>"; };
 		20FA163E28EAF8F40020F291 /* Sample21View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample21View.swift; sourceTree = "<group>"; };
+		20FA165128EC15500020F291 /* Sample22View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample22View.swift; sourceTree = "<group>"; };
 		DD27A45B27993D5D008FBD84 /* Sample6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample6View.swift; sourceTree = "<group>"; };
 		DD27A45D27993D65008FBD84 /* Sample6ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample6ViewModel.swift; sourceTree = "<group>"; };
 		DD27A45F27993E32008FBD84 /* SampleSwiftUI2 (iOS).entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SampleSwiftUI2 (iOS).entitlements"; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				20FA163428EAD29B0020F291 /* Sample19 */,
 				20FA163A28EAD55C0020F291 /* Sample20 */,
 				20FA163D28EAF8E50020F291 /* Sample21 */,
+				20FA165028EC15440020F291 /* Sample22 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -423,6 +426,14 @@
 				20FA163E28EAF8F40020F291 /* Sample21View.swift */,
 			);
 			path = Sample21;
+			sourceTree = "<group>";
+		};
+		20FA165028EC15440020F291 /* Sample22 */ = {
+			isa = PBXGroup;
+			children = (
+				20FA165128EC15500020F291 /* Sample22View.swift */,
+			);
+			path = Sample22;
 			sourceTree = "<group>";
 		};
 		DD27A45A27993D4E008FBD84 /* Sample6 */ = {
@@ -619,6 +630,7 @@
 				20DB93FA27682B0D00D42683 /* Sample1View.swift in Sources */,
 				20C0D81028DCF7E6004B9C1D /* Sample18View.swift in Sources */,
 				20FA163628EAD2B90020F291 /* Sample19View.swift in Sources */,
+				20FA165228EC15500020F291 /* Sample22View.swift in Sources */,
 				20DB943327700C5700D42683 /* Sample4ViewModel.swift in Sources */,
 				20DB93E527682A3300D42683 /* ContentView.swift in Sources */,
 				20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */,
