@@ -45,6 +45,7 @@
 		20DB943D27701D4B00D42683 /* Sample4APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943427700CFF00D42683 /* Sample4APIClient.swift */; };
 		20DB943E27701D5500D42683 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943727700F6E00D42683 /* QiitaItem.swift */; };
 		20DB943F27701DF200D42683 /* Sample4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943227700C5700D42683 /* Sample4ViewModel.swift */; };
+		20DD30C428EC73A8009841AD /* Sample23View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DD30C328EC73A8009841AD /* Sample23View.swift */; };
 		20FA163628EAD2B90020F291 /* Sample19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163528EAD2B90020F291 /* Sample19View.swift */; };
 		20FA163928EAD3060020F291 /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 20FA163828EAD3060020F291 /* SlidingTabView */; };
 		20FA163C28EAD56B0020F291 /* Sample20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163B28EAD56B0020F291 /* Sample20View.swift */; };
@@ -111,6 +112,7 @@
 		20DB943727700F6E00D42683 /* QiitaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItem.swift; sourceTree = "<group>"; };
 		20DB94392770135E00D42683 /* Sample4ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample4ViewModelTest.swift; sourceTree = "<group>"; };
 		20DB943B2770141300D42683 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		20DD30C328EC73A8009841AD /* Sample23View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample23View.swift; sourceTree = "<group>"; };
 		20FA163528EAD2B90020F291 /* Sample19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample19View.swift; sourceTree = "<group>"; };
 		20FA163B28EAD56B0020F291 /* Sample20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample20View.swift; sourceTree = "<group>"; };
 		20FA163E28EAF8F40020F291 /* Sample21View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample21View.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				20FA163A28EAD55C0020F291 /* Sample20 */,
 				20FA163D28EAF8E50020F291 /* Sample21 */,
 				20FA165028EC15440020F291 /* Sample22 */,
+				20DD30C228EC7398009841AD /* Sample23 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -402,6 +405,14 @@
 				20DB943727700F6E00D42683 /* QiitaItem.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		20DD30C228EC7398009841AD /* Sample23 */ = {
+			isa = PBXGroup;
+			children = (
+				20DD30C328EC73A8009841AD /* Sample23View.swift */,
+			);
+			path = Sample23;
 			sourceTree = "<group>";
 		};
 		20FA163428EAD29B0020F291 /* Sample19 */ = {
@@ -612,6 +623,7 @@
 				2002C9C5285E160E00CAD188 /* Sample12Cell.swift in Sources */,
 				2002C9B7285E078A00CAD188 /* Sample8Cell.swift in Sources */,
 				2002C9BE285E12E000CAD188 /* Sample10View.swift in Sources */,
+				20DD30C428EC73A8009841AD /* Sample23View.swift in Sources */,
 				20DB943127700C2F00D42683 /* Sample4View.swift in Sources */,
 				20C0D80528DCE41A004B9C1D /* Sample15TestView.swift in Sources */,
 				206A7B46285C112A00445BEA /* Sample8View.swift in Sources */,
