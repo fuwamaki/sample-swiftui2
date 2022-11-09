@@ -20,7 +20,9 @@ struct Sample2View: View {
                 .clipShape(Capsule())
                 .modifier(CustomShape(isRounded: isRounded))
             CustomTextView(text: $text)
-            Spacer()
+                .frame(height: 100)
+                .padding()
+//            Spacer()
         }
     }
 }
@@ -51,11 +53,11 @@ struct CustomTextView: UIViewRepresentable {
     @Binding var text: String
 
     func makeUIView(context: Context) -> UITextView {
-        textView.delegate = context.coordinator
         textView.isEditable = false
         textView.isSelectable = true
         textView.font = .systemFont(ofSize: 14)
         textView.textColor = .darkGray
+        textView.backgroundColor = .secondarySystemBackground
         textView.linkTextAttributes = [
             NSAttributedString.Key.foregroundColor: UIColor.link
         ]
@@ -65,21 +67,5 @@ struct CustomTextView: UIViewRepresentable {
 
     func updateUIView(_ uiView: UITextView, context: Context) {
         uiView.text = text
-    }
-
-    func makeCoordinator() -> Coordinator {
-        Coordinator(text: $text)
-    }
-
-    class Coordinator: NSObject, UITextViewDelegate {
-        @Binding var text: String
-
-        init(text: Binding<String>) {
-            self._text = text
-        }
-
-        func textViewDidChange(_ textView: UITextView) {
-            _text.wrappedValue = textView.text
-        }
     }
 }
