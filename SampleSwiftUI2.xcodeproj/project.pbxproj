@@ -47,6 +47,7 @@
 		20DB943E27701D5500D42683 /* QiitaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943727700F6E00D42683 /* QiitaItem.swift */; };
 		20DB943F27701DF200D42683 /* Sample4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB943227700C5700D42683 /* Sample4ViewModel.swift */; };
 		20DD30C428EC73A8009841AD /* Sample23View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DD30C328EC73A8009841AD /* Sample23View.swift */; };
+		20F859C2291CC2FC009A5078 /* Sample25View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F859C1291CC2FC009A5078 /* Sample25View.swift */; };
 		20FA163628EAD2B90020F291 /* Sample19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163528EAD2B90020F291 /* Sample19View.swift */; };
 		20FA163928EAD3060020F291 /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 20FA163828EAD3060020F291 /* SlidingTabView */; };
 		20FA163C28EAD56B0020F291 /* Sample20View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA163B28EAD56B0020F291 /* Sample20View.swift */; };
@@ -115,6 +116,7 @@
 		20DB94392770135E00D42683 /* Sample4ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample4ViewModelTest.swift; sourceTree = "<group>"; };
 		20DB943B2770141300D42683 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		20DD30C328EC73A8009841AD /* Sample23View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample23View.swift; sourceTree = "<group>"; };
+		20F859C1291CC2FC009A5078 /* Sample25View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample25View.swift; sourceTree = "<group>"; };
 		20FA163528EAD2B90020F291 /* Sample19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample19View.swift; sourceTree = "<group>"; };
 		20FA163B28EAD56B0020F291 /* Sample20View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample20View.swift; sourceTree = "<group>"; };
 		20FA163E28EAF8F40020F291 /* Sample21View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample21View.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				20FA165028EC15440020F291 /* Sample22 */,
 				20DD30C228EC7398009841AD /* Sample23 */,
 				207EC129290FB1FE007B931C /* Sample24 */,
+				20F859C0291CC2E4009A5078 /* Sample25 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -424,6 +427,14 @@
 				20DD30C328EC73A8009841AD /* Sample23View.swift */,
 			);
 			path = Sample23;
+			sourceTree = "<group>";
+		};
+		20F859C0291CC2E4009A5078 /* Sample25 */ = {
+			isa = PBXGroup;
+			children = (
+				20F859C1291CC2FC009A5078 /* Sample25View.swift */,
+			);
+			path = Sample25;
 			sourceTree = "<group>";
 		};
 		20FA163428EAD29B0020F291 /* Sample19 */ = {
@@ -654,6 +665,7 @@
 				20C0D81028DCF7E6004B9C1D /* Sample18View.swift in Sources */,
 				20FA163628EAD2B90020F291 /* Sample19View.swift in Sources */,
 				20FA165228EC15500020F291 /* Sample22View.swift in Sources */,
+				20F859C2291CC2FC009A5078 /* Sample25View.swift in Sources */,
 				20DB943327700C5700D42683 /* Sample4ViewModel.swift in Sources */,
 				20DB93E527682A3300D42683 /* ContentView.swift in Sources */,
 				20DB93FD2768894A00D42683 /* BadgeCardView.swift in Sources */,
