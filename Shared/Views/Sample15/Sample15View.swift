@@ -20,9 +20,9 @@ struct Sample15View: View {
             Text("test")
         }
         // これの代わりが
-        NavigationLink("Hey", isActive: $isShow) {
-            Sample15TestView(text: "HHH")
-        }
+//        NavigationLink("Hey", isActive: $isShow) {
+//            Sample15TestView(text: "HHH")
+//        }
         // これ
         Button("Next") {
             isShow.toggle()
