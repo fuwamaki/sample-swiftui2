@@ -51,22 +51,10 @@ private struct PenKitView: UIViewRepresentable {
 }
 
 final class CustomCanvasView: PKCanvasView {
-    private var prevEventTime: TimeInterval?
-
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch: UITouch = touches.first!
         let location = touch.location(in: self)
-
-        let prevLocation = touch.previousLocation(in: self)
-        if let eventTime = event?.timestamp, let prev = prevEventTime {
-            // そのときの時間-前回の時間
-            let time = CGFloat(eventTime - prev)
-            // そのときの座標と前回の座標間距離
-            let distance = sqrt(pow((location.x-prevLocation.x), 2)
-                                    + pow((location.y-prevLocation.y), 2))
-            print("distance/time: \(distance/time)")
-        }
-        prevEventTime = event?.timestamp
+        print(location)
     }
 }
 
