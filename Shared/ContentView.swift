@@ -159,6 +159,11 @@ struct ContentView: View {
                     } label: {
                         Text("Sample Maze")
                     }
+                    NavigationLink {
+                        SamplePokemonView()
+                    } label: {
+                        Text("Sample Pokemon")
+                    }
                 }
             }
             .navigationTitle(isShowContentView ? "Home" : "")

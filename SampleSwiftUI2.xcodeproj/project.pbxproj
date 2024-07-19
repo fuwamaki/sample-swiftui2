@@ -16,6 +16,8 @@
 		2002C9C7285E16DB00CAD188 /* Sample12ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9C6285E16DB00CAD188 /* Sample12ImageCell.swift */; };
 		2002C9CA285E877200CAD188 /* Sample13View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9C9285E877200CAD188 /* Sample13View.swift */; };
 		2002C9CD285E890A00CAD188 /* Sample14View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002C9CC285E890A00CAD188 /* Sample14View.swift */; };
+		201345E72C49087B007AE996 /* SamplePokemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201345E62C49087B007AE996 /* SamplePokemonView.swift */; };
+		201345EC2C490BE2007AE996 /* pokemon-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 201345EB2C490BE2007AE996 /* pokemon-data.json */; };
 		2028E53B2851DAD700DD5846 /* Sample7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53A2851DAD700DD5846 /* Sample7View.swift */; };
 		2028E53D2851DB2000DD5846 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028E53C2851DB2000DD5846 /* CalendarView.swift */; };
 		2062328227747119009BCC99 /* Sample5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2062328127747119009BCC99 /* Sample5View.swift */; };
@@ -87,6 +89,8 @@
 		2002C9C6285E16DB00CAD188 /* Sample12ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample12ImageCell.swift; sourceTree = "<group>"; };
 		2002C9C9285E877200CAD188 /* Sample13View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample13View.swift; sourceTree = "<group>"; };
 		2002C9CC285E890A00CAD188 /* Sample14View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample14View.swift; sourceTree = "<group>"; };
+		201345E62C49087B007AE996 /* SamplePokemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePokemonView.swift; sourceTree = "<group>"; };
+		201345EB2C490BE2007AE996 /* pokemon-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pokemon-data.json"; sourceTree = "<group>"; };
 		2028E53A2851DAD700DD5846 /* Sample7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample7View.swift; sourceTree = "<group>"; };
 		2028E53C2851DB2000DD5846 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		2062328127747119009BCC99 /* Sample5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample5View.swift; sourceTree = "<group>"; };
@@ -215,6 +219,14 @@
 			path = Sample14;
 			sourceTree = "<group>";
 		};
+		201345E52C490864007AE996 /* Sample29 */ = {
+			isa = PBXGroup;
+			children = (
+				201345E62C49087B007AE996 /* SamplePokemonView.swift */,
+			);
+			path = Sample29;
+			sourceTree = "<group>";
+		};
 		2028E5392851DABD00DD5846 /* Sample7 */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +298,7 @@
 		20DB93B527682A3200D42683 = {
 			isa = PBXGroup;
 			children = (
+				201345EB2C490BE2007AE996 /* pokemon-data.json */,
 				DD27A45F27993E32008FBD84 /* SampleSwiftUI2 (iOS).entitlements */,
 				20DB93BA27682A3200D42683 /* Shared */,
 				20DB93C927682A3200D42683 /* macOS */,
@@ -376,6 +389,7 @@
 				20F859C3291CCB75009A5078 /* Sample26 */,
 				20F859C6291CD470009A5078 /* Sample27 */,
 				20F111DF2AEB992C0023857F /* Sample28 */,
+				201345E52C490864007AE996 /* Sample29 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -643,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20DB93E727682A3300D42683 /* Assets.xcassets in Resources */,
+				201345EC2C490BE2007AE996 /* pokemon-data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +698,7 @@
 				20C0D80528DCE41A004B9C1D /* Sample15TestView.swift in Sources */,
 				20F859C5291CCBF7009A5078 /* Sample26View.swift in Sources */,
 				206A7B46285C112A00445BEA /* Sample8View.swift in Sources */,
+				201345E72C49087B007AE996 /* SamplePokemonView.swift in Sources */,
 				20DB943827700F6E00D42683 /* QiitaItem.swift in Sources */,
 				2002C9CA285E877200CAD188 /* Sample13View.swift in Sources */,
 				2002C9C7285E16DB00CAD188 /* Sample12ImageCell.swift in Sources */,
